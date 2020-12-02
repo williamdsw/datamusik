@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmCadastroMidia</class>
+ <widget class="QWidget" name="frmCadastroMidia">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>491</width>
+    <height>641</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>491</width>
+    <height>641</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <italic>false</italic>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastro de Mídias</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#frmCadastroMidia
+{ 
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(129, 0, 0, 255), stop:1 rgba(217, 52, 52, 255));
+   font: &quot;URW Gothic L&quot;;
+}
+
+#gpbMidia
+{
+	background-color: rgba(0, 0, 0, 50);
+}
+
+#btnCancelar
+{
+	background-color: rgb(106, 0, 0);
+}
+
+#btnLimpar
+{	
+	background-color: rgb(89, 89, 89);
+}
+
+#btnConcluir
+{
+	background-color: rgb(0, 85, 0);
+}</string>
+  </property>
+  <widget class="QLabel" name="lblCadastroMidia">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>30</y>
+     <width>291</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>291</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>URW Gothic L</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>CADASTRO DE MÍDIAS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancelar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>590</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>101</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>URW Gothic L</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Cancelar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnConcluir">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>590</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>101</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>URW Gothic L</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Concluir</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnLimpar">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>590</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>101</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>URW Gothic L</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Limpar</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="gpbMidia">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>471</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>471</width>
+     <height>511</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QLabel, .QPlainTextEdit, .QPushButton, .QComboBox, .QRadioButton, .QDateEdit, .QLineEdit
+{
+	font: 12pt &quot;URW Gothic L&quot;;;
+}
+
+QPlainTextEdit, .QLineEdit
+{
+	background-color: rgb(0, 0, 0, 100);
+}
+
+QComboBox
+{	
+	background-color: rgb(45, 45, 45);
+}
+
+.QPushButton
+{	
+	background-color: rgb(65, 65, 65, 150);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="lblCamposObrigatorios">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>480</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Gothic L</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Campos obrigatórios*</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbTipo">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>130</y>
+      <width>151</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>151</width>
+      <height>32</height>
+     </size>
+    </property>
+    <item>
+     <property name="text">
+      <string>Tipo da Mídia*</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DVD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BluRay</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VHS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Vinil</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="txtPreco">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>221</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>400</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Preço</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblImagem">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Gothic L</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Imagem</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbIdioma">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>451</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>500</width>
+      <height>32</height>
+     </size>
+    </property>
+    <item>
+     <property name="text">
+      <string>Idioma</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Alemão</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Árabe</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Coreano</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Espanhol</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Francês</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Inglês</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Italiano</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Japonês</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Madarin</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Português</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Russo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Outro...</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="ptbImagem">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>40</y>
+      <width>101</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>121</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Gothic L</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Imagens/Others/DVD.png) 0 0 0 0 stretch stretch;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="rtxInformacoes">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>451</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>451</width>
+      <height>181</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>181</height>
+     </size>
+    </property>
+    <property name="plainText">
+     <string>Informações Adicionais</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbEstado">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>90</y>
+      <width>151</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>151</width>
+      <height>32</height>
+     </size>
+    </property>
+    <item>
+     <property name="text">
+      <string>Estado da Mídia*</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Usada</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nova</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="txtQuantidade">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>250</y>
+      <width>221</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>400</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Quantidade</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtNome">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>331</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>400</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Nome*</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbGenero">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>171</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>171</width>
+      <height>32</height>
+     </size>
+    </property>
+    <item>
+     <property name="text">
+      <string>Gênero*</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Blues</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Country</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Eletrônica</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Folk</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hip Hop</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Jazz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Metal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pop</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Reggae</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>R&amp;B</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Rock</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Progressivo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Psicodélico</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Outro...</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="btnCarregar">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>170</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>101</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Carregar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtDuracao">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>331</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>400</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Duração</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtArtista">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>331</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>400</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Artista*</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtAnoLancamento">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>171</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>400</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Ano de Lançamento*</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtNome</tabstop>
+  <tabstop>txtArtista</tabstop>
+  <tabstop>cmbGenero</tabstop>
+  <tabstop>cmbEstado</tabstop>
+  <tabstop>txtAnoLancamento</tabstop>
+  <tabstop>cmbTipo</tabstop>
+  <tabstop>txtDuracao</tabstop>
+  <tabstop>btnCarregar</tabstop>
+  <tabstop>cmbIdioma</tabstop>
+  <tabstop>txtPreco</tabstop>
+  <tabstop>txtQuantidade</tabstop>
+  <tabstop>rtxInformacoes</tabstop>
+  <tabstop>btnCancelar</tabstop>
+  <tabstop>btnLimpar</tabstop>
+  <tabstop>btnConcluir</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

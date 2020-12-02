@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../Imagens/Others/Funcionario.png</file>
+        <file>../Imagens/Others/DVD.png</file>
+        <file>../Imagens/Others/Microfone.png</file>
+        <file>../Imagens/Others/Palheta.png</file>
+        <file>../Imagens/Backgrounds/DataMusikLogo.png</file>
+    </qresource>
+</RCC>

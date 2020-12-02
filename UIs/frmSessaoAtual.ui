@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmSessaoAtual</class>
+ <widget class="QFrame" name="frmSessaoAtual">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>341</width>
+    <height>301</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>341</width>
+    <height>301</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>341</width>
+    <height>301</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sessão Atual do Usuário</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#frmSessaoAtual
+{
+		background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(99, 0, 0, 255), stop:0.484375 rgba(238, 68, 56, 255), stop:0.931937 rgba(179, 121, 121, 255));
+}
+#lblSessaoUsuario
+{
+	font: 28px &quot;URW Gothic L&quot; ;
+	color: white;
+	font: bold;
+}
+
+#gpbSessao
+{
+	background-color: rgba(0, 0, 0, 100);
+}
+
+#btnRetornar
+{
+	background-color: rgb(0, 25, 100);
+}</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QFrame" name="gpbSessao">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>321</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>481</width>
+     <height>331</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel, QComboBox
+{
+	font: 45 12pt &quot;URW Gothic L&quot;;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QComboBox" name="cmbTelas">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>301</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>301</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>301</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTelas">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>121</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>121</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Telas visitadas : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblNumeroTelas">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>311</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>311</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>311</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Numero de telas visitadas : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblInicio">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>311</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>311</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>311</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Inicio da Sessão : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTempo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>311</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>311</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>311</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Tempo atual da sessão :</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lblSessaoUsuario">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>10</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>URW Gothic L</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>SESSÃO ATUAL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRetornar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>URW Gothic L</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Retornar</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
